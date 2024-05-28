@@ -11,3 +11,35 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+:root{
+  --body_background: white;
+  --body_background_image: url('./assets/images/sun.png');
+  --body_background_right_image: url('./assets/images/parrot.png');
+  --body_background_image_bg: linear-gradient(142deg, rgba(41,128,185,1) 0%, rgba(109,213,240,1) 46%, rgba(255,255,255,1) 100%);
+  --mode_drop_shadow: drop-shadow(red 0rem 0rem 40px );
+  --body_color:black;
+  --link_color:navy;
+  --body_edubg: white !important;
+  --edu_color:black;
+  --pro_bg:rgba(0, 0, 0, 0.1);
+  --footer_color:black;
+  --footer_bg:#eeeeee;
+  --cursor-color: black;
+}
+
+[data-theme="dark"]{
+  --body_background: black;
+  --body_background_image: url('./assets/images/moon.png');
+  --body_background_image_bg: url('./assets/images/skynight.jpg');
+  --body_background_right_image: url('./assets/images/owl.webp');
+  --mode_drop_shadow: drop-shadow(white 0rem 0rem 40px);
+  --body_color:white;
+  --link_color:cyan;
+  --body_edubg:black;
+  --edu_color:#ffffff;
+  --pro_bg:rgba(255, 255, 255, 0.1);
+  --footer_color:white;
+  --footer_bg:#191919;
+  --cursor-color: white;
+}

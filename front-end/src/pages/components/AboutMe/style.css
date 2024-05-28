@@ -1,0 +1,40 @@
+
+.aboutMe{
+  padding-left: 5vw;
+  position: relative;
+  margin-top: 10vh;
+  color: rgb(255, 98, 0) !important;
+  z-index: 1;
+  background-image: url('../../../assets/images/pencil.png');
+  background-repeat: no-repeat;
+  background-position-x: right;
+  height: 75vh;
+}
+
+.aboutMe h3{
+  font-size: 4rem;
+  font-family: 'DM Serif Text', serif;
+  z-index: 1;
+}
+
+.aboutMe p{
+  width: 50%;
+  text-align: justify;
+  font-size: 20px;
+  z-index: 1;
+}
+
+.linksRow{
+  padding-top: 20px;
+  gap: 35px;
+  color: antiquewhite;
+}
+
+.iconHeader{
+  font-size: 40px;
+}
+
+.iconHeader:hover{
+  color: rgb(255, 98, 0);
+  transition: all ease-in-out 500ms;
+}

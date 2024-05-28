@@ -1,0 +1,76 @@
+.customNavBar{
+  background-color: var(--body_background);
+  color: var(--body_color);
+}
+
+.headerContent{
+  background-image: var( --body_background_image_bg);
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: all 3s;
+}
+
+.headerImage{
+  position: absolute;
+  top: 7vh;
+  right: 10vw;
+  background-image: var(--body_background_image);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 150px;
+  width: 150px;
+  transition: all 2s;
+  filter: drop-shadow(#e2e3f4 0rem 0rem 40px);
+}
+
+.headerIcon{
+  position: absolute;
+  left: 3vw;
+}
+.sideNavBar{
+  position: fixed;  
+  z-index: 1;
+  top: 20vh;
+
+}
+
+.textContainer {
+  text-align: center;
+  transition: all ease-in-out 2s;
+  color: var(--body_color);
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.welcomeText{
+  font-size: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: 'Krona One', sans-serif;
+}
+
+.portfolioText{
+  position: relative;
+  font-size: 8rem;
+  font-weight: bold;
+  width: fit-content;
+  font-family: 'Luckiest Guy', system-ui;
+}
+
+.extraContent img{
+  position: absolute;
+  right: 0;
+  bottom: 10vh;
+  max-width: 300px;
+  transition: all ease-in-out 3s;
+  transform: translateX(50);
+  content: var(--body_background_right_image);
+}
+
