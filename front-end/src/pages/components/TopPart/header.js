@@ -1,14 +1,9 @@
 import "./style.css";
 import { TypeAnimation } from "react-type-animation";
-import SideNavBar from "../Common/sideNavBar";
-import owlImage from "../../../assets/images/owl.webp";
 
 export default function Header() {
   return (
     <div className="headerSet">
-      <div className="sideNavBar">
-        <SideNavBar />
-      </div>
       <div className="headerContent d-flex text-align-center justify-content-center">
         <div className="headerImage"></div>
         <div className="container textContainer">
@@ -33,7 +28,7 @@ export default function Header() {
             </span>
           </div>
           <div className="extraContent">
-            <img />
+            <img alt="imageForAdd" />
           </div>
         </div>
       </div>

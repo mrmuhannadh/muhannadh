@@ -1,10 +1,5 @@
-.customNavBar{
-  background-color: var(--body_background);
-  color: var(--body_color);
-}
-
-.headerContent{
-  background-image: var( --body_background_image_bg);
+.headerContent {
+  background-image: var(--body_background_image_bg);
   background-repeat: no-repeat;
   height: 100vh;
   background-size: cover;
@@ -14,7 +9,7 @@
   transition: all 3s;
 }
 
-.headerImage{
+.headerImage {
   position: absolute;
   top: 7vh;
   right: 10vw;
@@ -27,15 +22,9 @@
   filter: drop-shadow(#e2e3f4 0rem 0rem 40px);
 }
 
-.headerIcon{
+.headerIcon {
   position: absolute;
   left: 3vw;
-}
-.sideNavBar{
-  position: fixed;  
-  z-index: 1;
-  top: 20vh;
-
 }
 
 .textContainer {
@@ -47,24 +36,51 @@
   flex-direction: column;
 }
 
-.welcomeText{
-  font-size: 5rem;
+.welcomeText {
+  font-size: 4vw;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  font-family: 'Krona One', sans-serif;
+  font-family: "Krona One", sans-serif;
 }
 
-.portfolioText{
+.portfolioText {
   position: relative;
-  font-size: 8rem;
+  font-size: 6vw;
   font-weight: bold;
   width: fit-content;
-  font-family: 'Luckiest Guy', system-ui;
+  font-family: "Luckiest Guy", system-ui;
 }
 
-.extraContent img{
+@media (max-width: 1200px) {
+  .welcomeText {
+    font-size: 4rem;
+  }
+  .portfolioText {
+    font-size: 7rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .welcomeText {
+    font-size: 3rem;
+  }
+  .portfolioText {
+    font-size: 6rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .welcomeText {
+    font-size: 2rem;
+  }
+  .portfolioText {
+    font-size: 4rem;
+  }
+}
+
+.extraContent img {
   position: absolute;
   right: 0;
   bottom: 10vh;
@@ -73,4 +89,3 @@
   transform: translateX(50);
   content: var(--body_background_right_image);
 }
-

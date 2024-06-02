@@ -18,6 +18,7 @@ code {
   --body_background_right_image: url('./assets/images/parrot.png');
   --body_background_image_bg: linear-gradient(142deg, rgba(41,128,185,1) 0%, rgba(109,213,240,1) 46%, rgba(255,255,255,1) 100%);
   --mode_drop_shadow: drop-shadow(red 0rem 0rem 40px );
+  --mainColors: #00c3ff;
   --body_color:black;
   --link_color:navy;
   --body_edubg: white !important;
@@ -34,6 +35,7 @@ code {
   --body_background_image_bg: url('./assets/images/skynight.jpg');
   --body_background_right_image: url('./assets/images/owl.webp');
   --mode_drop_shadow: drop-shadow(white 0rem 0rem 40px);
+  --mainColors: #FF4500;
   --body_color:white;
   --link_color:cyan;
   --body_edubg:black;
