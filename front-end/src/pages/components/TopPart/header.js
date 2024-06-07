@@ -1,3 +1,4 @@
+import React from "react";
 import "./style.css";
 import { TypeAnimation } from "react-type-animation";
 

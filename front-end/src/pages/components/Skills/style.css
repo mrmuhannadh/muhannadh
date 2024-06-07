@@ -1,0 +1,77 @@
+.tabsStyle {
+  margin-top: 5vh;
+}
+
+.tabsStyle .nav-link {
+  color: var(--body_color);
+}
+
+.tabsStyle .nav-link:hover {
+  border: none;
+  border-bottom: 2px solid;
+  border-color: var(--mainColors);
+  transition: all ease-in-out 1s;
+}
+
+.tabsStyle .nav-link.active {
+  background-color: var(--pro_bg);
+  color: var(--body_color);
+}
+
+.imageDiv {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+}
+
+.sliderCustomStyle {
+  margin-top: 8vh;
+}
+
+.sliderImage {
+  height: 170px;
+  max-height: 100%;
+  width: 100%;
+  object-fit: fill;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+.skillCard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  font: 1em sans-serif;
+  background-color: rgb(10, 84, 87);
+  margin: 10px;
+  position: relative;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 16px;
+  box-shadow: 1px 1px 20px 2px rgba(0, 162, 184, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.nonTechSkills {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.skillText {
+  z-index: 1;
+  font-size: 25px;
+  font-family: "krona-one";
+  color: #fff;
+}
+
+.skillImage {
+  position: absolute;
+  width: 70%;
+  max-height: 100%;
+  z-index: 0;
+  opacity: 0.3;
+}

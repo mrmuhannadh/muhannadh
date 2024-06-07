@@ -7,41 +7,51 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+* {
+  transition: all 0.3s ease-in-out;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
 
 :root{
-  --body_background: white;
+  --body_background: #F5F5F5;
   --body_background_image: url('./assets/images/sun.png');
   --body_background_right_image: url('./assets/images/parrot.png');
   --body_background_image_bg: linear-gradient(142deg, rgba(41,128,185,1) 0%, rgba(109,213,240,1) 46%, rgba(255,255,255,1) 100%);
   --mode_drop_shadow: drop-shadow(red 0rem 0rem 40px );
   --mainColors: #00c3ff;
-  --body_color:black;
+  --body_color:#111111;
   --link_color:navy;
-  --body_edubg: white !important;
-  --edu_color:black;
+  --body_edubg: #F5F5F5 !important;
+  --edu_color:#111111;
   --pro_bg:rgba(0, 0, 0, 0.1);
-  --footer_color:black;
-  --footer_bg:#eeeeee;
-  --cursor-color: black;
+  --footer_color:#111111;
+  --footer_bg:#F5F5F5;
+  --cursor-color: #111111;
+  --fade-font: #7e7d7d;
+  --monitor-border: #272727;
+
 }
 
 [data-theme="dark"]{
-  --body_background: black;
+  --body_background: #111111;
   --body_background_image: url('./assets/images/moon.png');
   --body_background_image_bg: url('./assets/images/skynight.jpg');
   --body_background_right_image: url('./assets/images/owl.webp');
   --mode_drop_shadow: drop-shadow(white 0rem 0rem 40px);
   --mainColors: #FF4500;
-  --body_color:white;
+  --body_color:#F5F5F5;
   --link_color:cyan;
-  --body_edubg:black;
-  --edu_color:#ffffff;
+  --body_edubg:#111111;
+  --edu_color:#F5F5F5;
   --pro_bg:rgba(255, 255, 255, 0.1);
-  --footer_color:white;
+  --footer_color:#F5F5F5;
   --footer_bg:#191919;
-  --cursor-color: white;
+  --cursor-color: #F5F5F5;
+  --fade-font: #E0DFDA;
+  --monitor-border: #bdbcbc;
 }
+

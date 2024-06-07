@@ -1,3 +1,4 @@
+import React from "react";
 import { Github, Instagram, Linkedin, Whatsapp } from "react-bootstrap-icons";
 import "./style.css";
 import myImage from "../../../assets/images/pencil.png";

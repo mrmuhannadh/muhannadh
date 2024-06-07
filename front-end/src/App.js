@@ -19,6 +19,12 @@ import {
   Person,
   Phone,
 } from "react-bootstrap-icons";
+import Experience from "./pages/components/Experience/Experience";
+import Skills from "./pages/components/Skills/skills";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Education from "./pages/components/Education/education";
+import Projects from "./pages/components/Projects/projects";
 
 function App() {
   const aboutMe = useRef(null);
@@ -60,26 +66,56 @@ function App() {
       <div className="sideNavBar">
         <div className={`sideNavigationBar ${openNavBar ? "openNavBar" : ""}`}>
           <ul className="sideNavList">
-            <li onClick={() => scrollToSection(aboutMe)}>
+            <li
+              onClick={() => {
+                scrollToSection(aboutMe);
+                toggleNavBar();
+              }}
+            >
               <Person />
               About Me
             </li>
-            <li onClick={() => scrollToSection(education)}>
-              <Book />
-              Education
+            <li
+              onClick={() => {
+                scrollToSection(experience);
+                toggleNavBar();
+              }}
+            >
+              <BuildingFillUp /> Experience
             </li>
-            <li onClick={() => scrollToSection(skills)}>
+            <li
+              onClick={() => {
+                scrollToSection(skills);
+                toggleNavBar();
+              }}
+            >
               <Bookshelf />
               Skills
             </li>
-            <li onClick={() => scrollToSection(experience)}>
-              <BuildingFillUp /> Experience
+            <li
+              onClick={() => {
+                scrollToSection(education);
+                toggleNavBar();
+              }}
+            >
+              <Book />
+              Education
             </li>
-            <li onClick={() => scrollToSection(projects)}>
+            <li
+              onClick={() => {
+                scrollToSection(projects);
+                toggleNavBar();
+              }}
+            >
               <Display />
               Projects
             </li>
-            <li onClick={() => scrollToSection(contact)}>
+            <li
+              onClick={() => {
+                scrollToSection(contact);
+                toggleNavBar();
+              }}
+            >
               <Phone />
               Contact
             </li>
@@ -97,6 +133,18 @@ function App() {
       </div>
       <div ref={aboutMe}>
         <AboutMe />
+      </div>
+      <div ref={experience}>
+        <Experience />
+      </div>
+      <div ref={skills}>
+        <Skills />
+      </div>
+      <div ref={education}>
+        <Education />
+      </div>
+      <div ref={projects}>
+        <Projects />
       </div>
       <div className="row">{/* <Footer /> */}</div>
     </div>

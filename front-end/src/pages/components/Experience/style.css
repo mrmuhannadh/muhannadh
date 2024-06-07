@@ -1,0 +1,41 @@
+.myBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 24px;
+  color: var(--body_color) !important;
+  max-height: 30vh;
+  min-height: 30vh;
+  z-index: 2;
+  box-sizing: border-box;
+  border: 5px solid transparent;
+  background-clip: padding-box;
+  padding-top: 10px;
+}
+
+.myBox:hover {
+  transform:
+    perspective(100em) rotateX(0deg);
+  border: 1px solid var(--mainColors);
+  transition: all ease-in-out 1s;
+}
+
+.sclLogo {
+  max-width: 15%;
+  border-radius: 40%;
+  margin-right: 2vw;
+  max-height: 100%;
+}
+
+.textArea{
+  width: 60%;
+}
+
+.positionText{
+  color: var(--fade-font);
+}

@@ -1,0 +1,184 @@
+.portfolio-container{
+  background-color: var(--background-color);
+  width: 100vw;
+ height: 800px;
+  margin-top: 10vh;
+}
+
+.laptop {
+  margin-top: 5vh;
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+  -webkit-transform: scale(.6) translate(-50%);
+  transform: scale(.6) translate(-50%);
+  left: 50%;
+  position: relative;
+  width: min-content;
+  max-width: 100vw;
+  height: min-content;
+  border-radius: 6px;
+  border-style: solid;
+  border-color: rgb(85, 85, 85);
+  border-width: 24px 24px 80px;
+  background-color: rgb(0, 0, 0);
+}
+
+.laptop .content {
+  width: 95vw;
+  height: 800px;
+  overflow: hidden;
+  border: none;
+}
+
+.contentStyle{
+  width:100%;
+  border:none;
+  height:100%;
+}
+
+.text-container {
+  position: relative;
+  padding-left: 4vw;
+  text-align: start;
+  margin: 10vh;
+}
+
+.smallText {
+  font-size: 20px;
+  display: block;
+  padding-left: 1vw;
+  font-weight: bold;
+}
+
+.oldPortStyle{
+  font-size: 6rem;
+  font-weight: bold;
+  left: 0;
+  line-height: 0.5;
+  font-family: "Krona One", sans-serif;
+}
+
+@media (max-width: 1200px) {
+  .oldPortStyle{
+    font-size: 6rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .oldPortStyle{
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .oldPortStyle{
+    font-size: 2rem;
+  }
+}
+
+/* Monitor */
+
+.myPro {
+  box-sizing: border-box;
+  border: 5px solid transparent;
+  background-clip: padding-box;
+}
+
+.screen::-webkit-scrollbar {
+  width: 10px;
+}
+
+.screen::-webkit-scrollbar-thumb {
+  background: #FF4500;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #888;
+}
+
+
+.iMac {
+  width: 350px;
+  margin: 50px auto;
+}
+
+.iMac h4{
+  padding-top: 2vh;
+}
+
+.iMac .body {
+  height: 230px;
+  background: var(--monitor-border);
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+
+}
+
+.iMac .body .screen {
+  height: 200px;
+  border: 10px solid var(--monitor-border);
+  overflow: hidden;
+  transition: all ease-in-out 0.5s;
+  border-radius: 5px 5px 0px 0px;
+  background: var(--body_background);
+}
+
+.iMac .body:hover .screen {
+  background: #444;
+  overflow-y: scroll;
+}
+
+.iMac .body .logo {
+  width: 16px;
+  height: 16px;
+  border-radius: 100px;
+  background: var(--mainColors);
+  margin: 5px auto 0 auto;
+  box-shadow: inset 0px 2px 0px rgba(0, 0, 0, 0.2);
+}
+
+.iMac .stand {
+  width: 80px;
+  height: 25px;
+  background: #aeaeae;
+  border: 20px solid var(--body_background);
+  border-top: 0;
+  border-bottom: 20px solid #c5c5c5;
+  border-radius: 5px;
+  box-shadow: 0px 4px 0px -2px #909090;
+  margin: 0 auto;
+}
+
+
+.imgPro {
+  max-width: fit-content;
+  max-width: 350px;
+}
+
+.linkPro {
+  color: #FF4500;
+  text-decoration: none;
+  font-size: 1.25em;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding-top: 10px;
+}
+
+.text-div{
+  border-radius: 25px;
+  background: var(--pro_bg);
+  margin-left: 20px;
+  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  padding: 30px;
+  height: fit-content;
+}
+
+.text-div .topic{
+  font-size: 2rem;
+  font-family: "oxygen", sans-serif;
+}

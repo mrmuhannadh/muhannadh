@@ -106,3 +106,14 @@
 .ccc{
   background-color: red !important;
 }
+
+.subTopic{
+  font-weight: 400;
+  font-size: 2rem;
+  font-family: "Krona One";
+}
+
+.subContainer{
+  margin-top: 5vh;
+  margin-bottom: 8vh;
+}
