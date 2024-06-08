@@ -7,10 +7,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-* {
-  transition: all 0.3s ease-in-out;
-}
-
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -33,7 +29,7 @@ code {
   --cursor-color: #111111;
   --fade-font: #7e7d7d;
   --monitor-border: #272727;
-
+  --theme-name:"light"
 }
 
 [data-theme="dark"]{
@@ -53,5 +49,6 @@ code {
   --cursor-color: #F5F5F5;
   --fade-font: #E0DFDA;
   --monitor-border: #bdbcbc;
+  --theme-name:"dart"
 }
 

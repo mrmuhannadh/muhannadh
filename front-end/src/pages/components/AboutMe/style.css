@@ -33,6 +33,8 @@
 
 .iconHeader{
   font-size: 40px;
+  color: var(--body_color);
+
 }
 
 .iconHeader:hover{

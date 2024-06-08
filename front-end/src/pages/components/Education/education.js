@@ -9,7 +9,9 @@ import azhar from "../../../assets/Logo/Logo.png";
 export default function Education() {
   return (
     <div className="container">
-      <span className="subTopic">Education</span>
+      <div data-aos="fade-right">
+        <span className="subTopic">Education</span>
+      </div>
       <div className="row eduCards">
         <EducationCard
           className="col-md"

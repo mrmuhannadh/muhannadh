@@ -1,0 +1,85 @@
+.footer-container{
+  margin: 10 10vw;
+}
+
+.contactLinks{
+  margin: 20px;
+  z-index: 2;
+  position: relative;
+  backdrop-filter: blur(10px);
+  width: 100%;
+  padding: 0;
+}
+
+.sendEmail{
+  position: relative;
+  z-index: 2;
+}
+
+.animImage{
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 350px;
+  transform: translateX(100px);
+  transition: all ease-in-out 5s;
+}
+
+.animContainer{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  bottom: 10vh;
+  z-index: 0;
+  min-height: min-content;
+  height: 100%;
+}
+
+.animImage.animate {
+  transform: translateX(-30vw);
+}
+
+.walkVideo{
+  max-height: 400px;
+}
+
+.contactDetails{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  z-index: 5;
+  left: 50px;
+  top: 50px;
+}
+
+.contactItem{
+  background-color: var(--pro_bg);
+  padding: 20px;
+  border-radius: 50px;
+  backdrop-filter: blur(5px);
+}
+
+.contactItem:active{
+  background-color: greenyellow;
+  color: black;
+}
+
+.contactItem span{
+  padding-left: 1vw;
+}
+
+
+.inputBox:hover{
+  box-shadow:var(--mainColors) 0px 0px 20px;
+}
+
+.submitButton{
+  border: 2px solid var(--mainColors);
+  background-color: transparent;
+  color: var(--body_color);
+}

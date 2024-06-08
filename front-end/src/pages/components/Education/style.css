@@ -28,7 +28,8 @@
 .eduCard:hover {
   box-shadow: 0 30px 45px rgba(0, 0, 0, 0.3);
   transition: all ease-in-out 1s;
-  transform: translateY(-10px) rotateY(0deg) rotateX(5deg);
+  transform: translateY(-10px) rotateY(10deg) rotateX(5deg) !important;
+  box-shadow:var(--mainColors) 0px 0px 10px;  
 }
 
 .eduCard h3 {
@@ -75,4 +76,5 @@
 .sliderImageCert{
   max-width: 100vw;
 }
+
 

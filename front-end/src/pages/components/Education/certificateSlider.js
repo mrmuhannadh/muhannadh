@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import adagrad from "../../../assets/Certificates/AdaGrad.PNG";
 import csc from "../../../assets/Certificates/CloudSkillsChallange.PNG";
 import ricit from "../../../assets/Certificates/RICIT.PNG";
@@ -6,7 +6,6 @@ import bigPic from "../../../assets/Certificates/UnderstaningBigPicture.PNG";
 import proDev from "../../../assets/Certificates/ProfessionalDevelopment.PNG";
 import imun from "../../../assets/Certificates/imun.jpeg";
 import flutter from "../../../assets/Certificates/flutter.jpg";
-import CarouselItemCard from "./carouselItem";
 import Carousel from "react-spring-3d-carousel";
 import { config } from "react-spring";
 import "./style.css";
@@ -53,7 +52,9 @@ export default function CertificateSlider() {
 
   return (
     <div className="container customCarousel">
-      <span className="subTopic certTitle">Certificates</span>
+      <div data-aos="fade-right">
+        <span className="subTopic">Certificates</span>
+      </div>
       <div className="customSlider">
         <Carousel
           slides={slides}

@@ -8,7 +8,7 @@ import "@fontsource/krona-one";
 import AboutMe from "./pages/components/AboutMe/aboutMe";
 import AnimatedCursor from "react-animated-cursor";
 import "@fontsource/dm-serif-text";
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import {
   Book,
   Bookshelf,
@@ -25,6 +25,12 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Education from "./pages/components/Education/education";
 import Projects from "./pages/components/Projects/projects";
+import Contact from "./pages/components/Contact/contact";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import GoUpButton from "./pages/components/Common/goUpButton";
+import "react-toastify/dist/ReactToastify.css";
+import DownloadMyCv from "./pages/components/Common/downloadMyCv";
 
 function App() {
   const aboutMe = useRef(null);
@@ -46,6 +52,10 @@ function App() {
     setOpenNavBar((prevState) => !prevState);
   }
 
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
     <div className="App">
       <AnimatedCursor
@@ -63,7 +73,7 @@ function App() {
         }}
       />
 
-      <div className="sideNavBar">
+      <div className={`sideNavBar ${openNavBar ? "sideOpened" : ""}`}>
         <div className={`sideNavigationBar ${openNavBar ? "openNavBar" : ""}`}>
           <ul className="sideNavList">
             <li
@@ -120,13 +130,18 @@ function App() {
               Contact
             </li>
           </ul>
-          <div className="arrowDiv" onClick={toggleNavBar}>
+          <div
+            className={`arrowDiv ${openNavBar ? "sideOpened" : ""}`}
+            onClick={toggleNavBar}
+          >
             {openNavBar ? <ChevronDoubleLeft /> : <ChevronDoubleRight />}
           </div>
         </div>
       </div>
 
       <Header />
+      <GoUpButton />
+      <DownloadMyCv />
 
       <div className="modeIcon">
         <Mode />
@@ -146,7 +161,9 @@ function App() {
       <div ref={projects}>
         <Projects />
       </div>
-      <div className="row">{/* <Footer /> */}</div>
+      <div ref={contact}>
+        <Contact />
+      </div>
     </div>
   );
 }

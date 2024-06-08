@@ -69,15 +69,17 @@ export default function Skills() {
   ];
   return (
     <div className="container subContainer">
-      <span className="subTopic">Skills</span>
-
+      <div data-aos="fade-right">
+        <span className="subTopic">Skills</span>
+      </div>
       <Tabs
         defaultActiveKey="frameworks"
         id="fill-tab-example"
         className="mb-3 tabsStyle"
         fill
+        data-aos="zoom-in"
       >
-        <Tab eventKey="frameworks" title="Frameworks">
+        <Tab eventKey="frameworks" title="Frameworks" data-aos="fade-down">
           <CommonSlider items={frameworks} />
         </Tab>
         <Tab eventKey="langs" title="Programming Languages">

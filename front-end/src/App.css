@@ -22,9 +22,11 @@
 
 .sideNavBar{
   position: fixed;  
-  z-index: 1;
   top: 20vh;
+}
 
+.sideOpened{
+  z-index: 10;
 }
 
 .sideNavigationBar{
@@ -43,6 +45,7 @@
 .openNavBar{
   transform: translateX(0);
   transition: all ease-in-out 1s;
+  position: fixed;
 }
 
 .sideNavList{
@@ -82,7 +85,7 @@
 .arrowDiv {
   height: 100px;
   position: absolute;
-  right: -31px;
+  right: -33px;
   top: 50%;
   transform: translateY(-50%);
   padding: 7px;
@@ -97,14 +100,13 @@
   display: flex;
   transition: all ease-in-out 0.2s;
   z-index: 1;
+  font-weight: bold;
+  font-size: 20px;
+  color: #000;
 }
 
 .arrowDiv:hover{
   color: var(--mainColors);
-}
-
-.ccc{
-  background-color: red !important;
 }
 
 .subTopic{
@@ -116,4 +118,13 @@
 .subContainer{
   margin-top: 5vh;
   margin-bottom: 8vh;
+}
+
+::-webkit-scrollbar {
+  background: var(--body_background) !important;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--mainColors);
+  border-radius: 10px;
 }

@@ -6,3 +6,48 @@
   background-repeat: no-repeat;
   background-size: cover; 
 }
+
+.btnToTop{
+  position: fixed;
+  right: 1%;
+  bottom: 8%;
+  z-index: 10;
+  border-radius: 50%;
+  background:var(--mainColors);
+  cursor: pointer;
+  transition: all ease-in-out 1s;
+}
+
+.downloadMyCv{
+  padding: 10px;
+  position: relative;
+  display: inline-block;
+  z-index: 10;
+  position: fixed;
+  bottom: 5%;
+  left: 2%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.downloadMyCv .tipText{
+  visibility: hidden;
+  background-color: var(--body_color);
+  color: var(--body_background);
+  padding: 5px;
+  border-radius: 5px;
+  font-weight: bold;
+  box-shadow: 0 0 50px 5px var(--mainColors);
+}
+
+.downloadIcon:hover + .tipText{
+  visibility: visible;
+}
+
+.downloadIcon{
+  display: flex;
+  align-items: center;
+  color: var(--body-color);
+  filter: drop-shadow(var(--mainColors) 2px 2px 5px);
+}
