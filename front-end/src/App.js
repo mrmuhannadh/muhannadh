@@ -31,6 +31,7 @@ import "aos/dist/aos.css";
 import GoUpButton from "./pages/components/Common/goUpButton";
 import "react-toastify/dist/ReactToastify.css";
 import DownloadMyCv from "./pages/components/Common/downloadMyCv";
+import ColorPicker from "./pages/components/Common/colorPicker";
 
 function App() {
   const aboutMe = useRef(null);
@@ -40,6 +41,8 @@ function App() {
   const projects = useRef(null);
   const contact = useRef(null);
   const [openNavBar, setOpenNavBar] = useState(false);
+  const [bgColor, setBgColor] = useState("");
+  const [fontColor, setFontColor] = useState("");
 
   const scrollToSection = (elementRef) => {
     window.scrollTo({
@@ -52,96 +55,118 @@ function App() {
     setOpenNavBar((prevState) => !prevState);
   }
 
+  const handleColorChange = (color) => {
+ 
+    setBgColor(color);
+  };
+
+  const handleFontColorChange = (color) => {
+  
+    setFontColor(color);
+  };
+
   useEffect(() => {
     AOS.init();
   }, []);
 
   return (
-    <div className="App">
-      <AnimatedCursor
-        innerSize={8}
-        outerSize={35}
-        innerScale={1}
-        outerScale={2}
-        outerAlpha={0}
-        hasBlendMode={true}
-        innerStyle={{
-          backgroundColor: "var(--cursor-color)",
-        }}
-        outerStyle={{
-          border: "4px solid var(--cursor-color)",
-        }}
-      />
+    <div className="App" style={{ backgroundColor: bgColor, color: fontColor }}>
+      <div className="d-sm-none d-md-block">
+        <AnimatedCursor
+          innerSize={8}
+          outerSize={35}
+          innerScale={1}
+          outerScale={2}
+          outerAlpha={0}
+          hasBlendMode={true}
+          innerStyle={{
+            backgroundColor: "var(--cursor-color)",
+          }}
+          outerStyle={{
+            border: "4px solid var(--cursor-color)",
+          }}
+        />
+      </div>
 
-      <div className={`sideNavBar ${openNavBar ? "sideOpened" : ""}`}>
-        <div className={`sideNavigationBar ${openNavBar ? "openNavBar" : ""}`}>
-          <ul className="sideNavList">
-            <li
-              onClick={() => {
-                scrollToSection(aboutMe);
-                toggleNavBar();
-              }}
-            >
-              <Person />
-              About Me
-            </li>
-            <li
-              onClick={() => {
-                scrollToSection(experience);
-                toggleNavBar();
-              }}
-            >
-              <BuildingFillUp /> Experience
-            </li>
-            <li
-              onClick={() => {
-                scrollToSection(skills);
-                toggleNavBar();
-              }}
-            >
-              <Bookshelf />
-              Skills
-            </li>
-            <li
-              onClick={() => {
-                scrollToSection(education);
-                toggleNavBar();
-              }}
-            >
-              <Book />
-              Education
-            </li>
-            <li
-              onClick={() => {
-                scrollToSection(projects);
-                toggleNavBar();
-              }}
-            >
-              <Display />
-              Projects
-            </li>
-            <li
-              onClick={() => {
-                scrollToSection(contact);
-                toggleNavBar();
-              }}
-            >
-              <Phone />
-              Contact
-            </li>
-          </ul>
+      <div className="sNav">
+        <div className={`sideNavBar ${openNavBar ? "sideOpened" : ""}`}>
           <div
-            className={`arrowDiv ${openNavBar ? "sideOpened" : ""}`}
-            onClick={toggleNavBar}
+            className={`sideNavigationBar ${openNavBar ? "openNavBar" : ""}`}
           >
-            {openNavBar ? <ChevronDoubleLeft /> : <ChevronDoubleRight />}
+            <ul className="sideNavList">
+              <li
+                onClick={() => {
+                  scrollToSection(aboutMe);
+                  toggleNavBar();
+                }}
+              >
+                <Person />
+                About Me
+              </li>
+              <li
+                onClick={() => {
+                  scrollToSection(experience);
+                  toggleNavBar();
+                }}
+              >
+                <BuildingFillUp /> Experience
+              </li>
+              <li
+                onClick={() => {
+                  scrollToSection(skills);
+                  toggleNavBar();
+                }}
+              >
+                <Bookshelf />
+                Skills
+              </li>
+              <li
+                onClick={() => {
+                  scrollToSection(education);
+                  toggleNavBar();
+                }}
+              >
+                <Book />
+                Education
+              </li>
+              <li
+                onClick={() => {
+                  scrollToSection(projects);
+                  toggleNavBar();
+                }}
+              >
+                <Display />
+                Projects
+              </li>
+              <li
+                onClick={() => {
+                  scrollToSection(contact);
+                  toggleNavBar();
+                }}
+              >
+                <Phone />
+                Contact
+              </li>
+            </ul>
           </div>
+        </div>
+        <div
+          className={`arrowDiv ${openNavBar ? "arrowSideOpened" : ""}`}
+          onClick={toggleNavBar}
+        >
+          {openNavBar ? <ChevronDoubleLeft /> : <ChevronDoubleRight />}
         </div>
       </div>
 
       <Header />
       <GoUpButton />
       <DownloadMyCv />
+      <div className="colorPicker">
+        <ColorPicker
+          onBgColorChange={handleColorChange}
+          onFontColorChange={handleFontColorChange}
+        />
+      </div>
 
       <div className="modeIcon">
         <Mode />

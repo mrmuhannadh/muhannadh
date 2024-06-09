@@ -29,11 +29,9 @@
 }
 
 .sliderImage {
-  height: 170px;
-  max-height: 100%;
+  padding: 1vw;
   width: 100%;
   object-fit: fill;
-  padding: 0;
   margin: 0;
   overflow: hidden;
 }

@@ -20,7 +20,6 @@
 
 .downloadMyCv{
   padding: 10px;
-  position: relative;
   display: inline-block;
   position: fixed;
   bottom: 3%;
@@ -28,6 +27,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  z-index: 10;
 }
 
 .downloadMyCv .tipText{
@@ -47,9 +47,18 @@
 }
 
 .downloadIcon{
-  display: flex;
-  align-items: center;
   color: var(--body-color);
   filter: drop-shadow(var(--mainColors) 2px 2px 5px);
   z-index: 10 !important;
+}
+
+.resetBtn{
+  border: 1px solid var(--mainColors);
+  padding: 2px 5px;
+}
+
+.resetBtn:hover{
+  border: 1px solid var(--mainColors);
+  background-color: var(--mainColors);
+  color: var(--body_background);
 }

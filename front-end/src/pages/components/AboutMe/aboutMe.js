@@ -10,6 +10,7 @@ export default function AboutMe() {
         <div className="row">
           <div className="col-md-6">
             <h3 data-aos="fade-up">Hi, This is Muhannadh</h3>
+            <h5>React | Flutter | Symphony | .Net Core</h5>
             <p className="py-4" data-aos="fade-down">
               A Software Engineer with 1 years of experience specializing in
               full stack web development with frameworks like React, Next JS,

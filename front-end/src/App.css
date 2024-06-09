@@ -84,8 +84,8 @@
 
 .arrowDiv {
   height: 100px;
-  position: absolute;
-  right: -33px;
+  position: fixed;
+  left: 0; /* Start from the left */
   top: 50%;
   transform: translateY(-50%);
   padding: 7px;
@@ -98,16 +98,21 @@
   justify-content: center;
   cursor: pointer;
   display: flex;
-  transition: all ease-in-out 0.2s;
-  z-index: 1;
+  transition: all ease-in-out 1s;
+  z-index: 10 !important;
   font-weight: bold;
   font-size: 20px;
   color: #000;
 }
 
-.arrowDiv:hover{
+.arrowDiv:hover {
   color: var(--mainColors);
 }
+
+.arrowSideOpened {
+  left: 190px;
+}
+
 
 .subTopic{
   font-weight: 400;
@@ -127,4 +132,62 @@
 ::-webkit-scrollbar-thumb {
   background: var(--mainColors);
   border-radius: 10px;
+  cursor: pointer; 
+}
+
+.colorPicker{
+  position: fixed;
+  top: 4%;
+  right: 2%;
+  transition: all ease-in-out 1s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 50;
+}
+
+.gear:hover {
+  transition: all ease-in-out 1s;
+  transform: rotateZ(360deg) !important;
+}
+
+.picker{
+  transition: all ease-in-out 1s;
+}
+
+.colorPickerDiv{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 300px;
+  margin: 0 auto;
+  padding: 10px;
+  background-color: var(--body_background);
+  color: var(--body_color);
+}
+
+.toastBody{
+  background-color: var(--body_background);
+  padding: 0;
+  margin: 0;
+}
+
+.colorPickerInput {
+  appearance: none;
+  border: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+  outline: none;
+}
+
+.colorPickerInput::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+
+.colorPickerInput::-webkit-color-swatch {
+  border: 2px solid #fff;
+  border-radius: 50%;
+  cursor: pointer;
 }

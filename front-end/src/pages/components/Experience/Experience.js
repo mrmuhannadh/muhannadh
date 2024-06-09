@@ -9,7 +9,7 @@ export default function Experience() {
         <span className="subTopic">My Experiences</span>
       </div>
       <div className="row my-4">
-        <div className="col-md-6" data-aos="zoom-in-right">
+        <div className="col-md-6 ddd" data-aos="zoom-in-right">
           <ExpCard
             company="Eyepax IT Consulting(Pvt) Ltd"
             position="Intern Software Engineer"
@@ -18,7 +18,7 @@ export default function Experience() {
             body="I was worked as a Full stack developer on a workload allocation manangment system which developed using React and Symphony."
           />
         </div>
-        <div className="col-md-6" data-aos="zoom-in-left">
+        <div className="col-md-6 ddd" data-aos="zoom-in-left">
           <ExpCard
             company="Eyepax IT Consulting(Pvt) Ltd"
             position="Junior Software Engineer"

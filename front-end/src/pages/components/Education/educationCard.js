@@ -6,7 +6,10 @@ export default function EducationCard({ institute, location, body, logo }) {
       <h3>{institute}</h3>
       <span>{location}</span>
       <p>{body}</p>
-      <img src={logo} alt="University of Ruhuna" />
+      <div className="imageDivLogo">
+      <img src={logo} alt="University of Ruhuna" className="instImage" />
+
+      </div>
     </div>
   );
 }

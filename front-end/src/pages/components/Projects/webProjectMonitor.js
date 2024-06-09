@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Display, Github } from "react-bootstrap-icons";
+import { Display, Github, XCircleFill } from "react-bootstrap-icons";
 import Modal from "react-bootstrap/Modal";
 import portVideo from "../../../assets/images/Projects/portVideo.mp4";
 
@@ -50,8 +50,7 @@ export default function WebProjectMonitor({
       <div
         className="col-md-7 text-div"
         data-aos="fade-right"
-        data-aos-offset="300"
-        data-aos-easing="ease-in-sine"
+        data-aos-offset="100"
       >
         <span className="topic">{descriptions}</span>
         <div>
@@ -78,6 +77,14 @@ export default function WebProjectMonitor({
                     centered
                   >
                     <Modal.Body className="modelBody">
+                      {" "}
+                      <XCircleFill
+                        color="red"
+                        size={30}
+                        className="closeButton"
+                        onClick={handleClose}
+                        type="button"
+                      />
                       <video className="videoClass" controls autoPlay>
                         <source src={portVideo} type="video/mp4" />
                       </video>

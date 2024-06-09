@@ -32,7 +32,7 @@ export default function Education() {
           className="col-md"
           logo={azhar}
           institute="Al Azhar Central Collage"
-          location="Ordinery Level"
+          location="Ordinary Level"
           body="Results - 3As, 2Bs and 4Cs"
         />
       </div>

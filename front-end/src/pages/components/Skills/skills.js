@@ -79,7 +79,7 @@ export default function Skills() {
         fill
         data-aos="zoom-in"
       >
-        <Tab eventKey="frameworks" title="Frameworks" data-aos="fade-down">
+        <Tab eventKey="frameworks" title="Frameworks">
           <CommonSlider items={frameworks} />
         </Tab>
         <Tab eventKey="langs" title="Programming Languages">
