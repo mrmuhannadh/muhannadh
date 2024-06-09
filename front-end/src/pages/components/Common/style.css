@@ -22,9 +22,8 @@
   padding: 10px;
   position: relative;
   display: inline-block;
-  z-index: 10;
   position: fixed;
-  bottom: 5%;
+  bottom: 3%;
   left: 2%;
   display: flex;
   align-items: center;
@@ -39,10 +38,12 @@
   border-radius: 5px;
   font-weight: bold;
   box-shadow: 0 0 50px 5px var(--mainColors);
+  z-index:-1 !important;
 }
 
 .downloadIcon:hover + .tipText{
   visibility: visible;
+  z-index: 5;
 }
 
 .downloadIcon{
@@ -50,4 +51,5 @@
   align-items: center;
   color: var(--body-color);
   filter: drop-shadow(var(--mainColors) 2px 2px 5px);
+  z-index: 10 !important;
 }

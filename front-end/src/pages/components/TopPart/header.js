@@ -1,6 +1,7 @@
 import React from "react";
 import "./style.css";
 import { TypeAnimation } from "react-type-animation";
+import { GearFill } from "react-bootstrap-icons";
 
 export default function Header() {
   return (
@@ -30,6 +31,9 @@ export default function Header() {
           </div>
           <div className="extraContent">
             <img alt="imageForAdd" />
+          </div>
+          <div className="">
+            <GearFill size={40} className="gear" />
           </div>
         </div>
       </div>

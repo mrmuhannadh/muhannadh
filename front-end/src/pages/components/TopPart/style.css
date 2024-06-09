@@ -89,3 +89,8 @@
   transform: translateX(50);
   content: var(--body_background_right_image);
 }
+
+.gear:hover{
+  transition: all ease-in-out 1s;
+  transform: rotateZ(360deg) !important;
+}

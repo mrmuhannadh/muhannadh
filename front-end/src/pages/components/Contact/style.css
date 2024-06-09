@@ -6,7 +6,6 @@
   margin: 20px;
   z-index: 2;
   position: relative;
-  backdrop-filter: blur(10px);
   width: 100%;
   padding: 0;
 }
@@ -82,4 +81,36 @@
   border: 2px solid var(--mainColors);
   background-color: transparent;
   color: var(--body_color);
+  z-index: 10;
+}
+
+.submitButton:hover{
+  border: 2px solid var(--mainColors);
+}
+
+.loadingOverlay{
+  position: absolute;
+  width: 100%;
+  top: 0;
+  height: 100%;
+  z-index: 100 !important;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loadingDiv{
+  filter: blur(1px);
+  z-index: 1;
+}
+
+.hiddenOverlay{
+  display: none;
+}
+
+.loadingIcon{
+  z-index: 10;
+  font-size: 20px;
+  color: var(--mainColors) !important;
 }

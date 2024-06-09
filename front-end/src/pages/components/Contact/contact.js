@@ -45,6 +45,7 @@ export default function Contact() {
       }
     };
   }, []);
+  
 
   return (
     <div className="container footer-container">

@@ -1,13 +1,12 @@
 import React from "react";
 import "./style.css";
-import { ToastContainer, toast } from "react-toastify";
+import { toast } from "react-toastify";
+import Toaster from "./toaster";
 
 export default function ContactItem({ icon, value }) {
   const notify = () => toast("Text copied");
   const error = () => toast("Not coppied");
-  const selectedTheme = localStorage.getItem("selectedTheme");
 
-  console.log(selectedTheme);
   const copyToClipboard = () => {
     navigator.clipboard
       .writeText(value)
@@ -29,19 +28,7 @@ export default function ContactItem({ icon, value }) {
         data-aos-duration="3000"
       >
         {icon} <span>{value}</span>
-        <ToastContainer
-          position="bottom-right"
-          autoClose={500}
-          hideProgressBar={false}
-          newestOnTop={false}
-          closeOnClick={true}
-          rtl={false}
-          pauseOnFocusLoss
-          draggable
-          pauseOnHover
-          theme={selectedTheme}
-          limit={2}
-        />
+        <Toaster />
       </div>
     </>
   );
