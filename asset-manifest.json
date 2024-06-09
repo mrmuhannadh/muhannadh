@@ -1,11 +1,12 @@
 {
   "files": {
-    "main.css": "/react_portfolio/static/css/main.b161b38d.css",
-    "main.js": "/react_portfolio/static/js/main.aa2ddf67.js",
+    "main.css": "/react_portfolio/static/css/main.3eaf9c7b.css",
+    "main.js": "/react_portfolio/static/js/main.18b12076.js",
     "static/js/453.9537af23.chunk.js": "/react_portfolio/static/js/453.9537af23.chunk.js",
     "static/media/portVideo.mp4": "/react_portfolio/static/media/portVideo.768485b298b51cb6b695.mp4",
     "static/media/mob.png": "/react_portfolio/static/media/mob.5e3f8a95cd2508eef470.png",
     "static/media/contact.gif": "/react_portfolio/static/media/contact.aa3e1dd61d885172c67b.gif",
+    "static/media/working.gif": "/react_portfolio/static/media/working.b4e0c47c59fa40d10253.gif",
     "static/media/oba.png": "/react_portfolio/static/media/oba.9a469fe53a0b2b61e7e7.png",
     "static/media/ProfessionalDevelopment.PNG": "/react_portfolio/static/media/ProfessionalDevelopment.22b13a00ff29bdd71823.PNG",
     "static/media/AdaGrad.PNG": "/react_portfolio/static/media/AdaGrad.7f5daba48744d6443fd8.PNG",
@@ -23,11 +24,11 @@
     "static/media/uniLogo.png": "/react_portfolio/static/media/uniLogo.872a9624f4e967fd5957.png",
     "static/media/moon.png": "/react_portfolio/static/media/moon.9db836bbf65b3b1fe490.png",
     "static/media/sun.png": "/react_portfolio/static/media/sun.96a554a66411e769e4b1.png",
-    "static/media/sclLogo.png": "/react_portfolio/static/media/sclLogo.e2fc5e042aa92c126ce3.png",
     "static/media/appium.png": "/react_portfolio/static/media/appium.a56421601d2f1555da87.png",
     "static/media/cS.png": "/react_portfolio/static/media/cS.a6602ea2f18ea996057c.png",
     "static/media/skynight.jpg": "/react_portfolio/static/media/skynight.3c239a874d1b2937eaa6.jpg",
     "static/media/imun.jpeg": "/react_portfolio/static/media/imun.1419a293f54c981d065f.jpeg",
+    "static/media/sclLogo.png": "/react_portfolio/static/media/sclLogo.9c5347292b36d569f478.png",
     "static/media/owl.webp": "/react_portfolio/static/media/owl.0bd1fc7a0f6385cf9772.webp",
     "static/media/CloudSkillsChallange.PNG": "/react_portfolio/static/media/CloudSkillsChallange.642afa6722e7d1b1660d.PNG",
     "static/media/UnderstaningBigPicture.PNG": "/react_portfolio/static/media/UnderstaningBigPicture.1413c120a6c1a4c464da.PNG",
@@ -83,12 +84,12 @@
     "index.html": "/react_portfolio/index.html",
     "static/media/presentation.svg": "/react_portfolio/static/media/presentation.863085b79314637755032c32d2112b05.svg",
     "static/media/wave.svg": "/react_portfolio/static/media/wave.b9336fe0f14616b846f7.svg",
-    "main.b161b38d.css.map": "/react_portfolio/static/css/main.b161b38d.css.map",
-    "main.aa2ddf67.js.map": "/react_portfolio/static/js/main.aa2ddf67.js.map",
+    "main.3eaf9c7b.css.map": "/react_portfolio/static/css/main.3eaf9c7b.css.map",
+    "main.18b12076.js.map": "/react_portfolio/static/js/main.18b12076.js.map",
     "453.9537af23.chunk.js.map": "/react_portfolio/static/js/453.9537af23.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b161b38d.css",
-    "static/js/main.aa2ddf67.js"
+    "static/css/main.3eaf9c7b.css",
+    "static/js/main.18b12076.js"
   ]
 }
